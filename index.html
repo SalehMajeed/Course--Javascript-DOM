@@ -92,6 +92,21 @@
             background-color: red;
             padding: 25px;
         }
+
+        .outer {
+            width: 200px;
+            height: 120px;
+            background: #aaaaaa;
+            padding: 20px;
+        }
+
+        .inner {
+            width: 80px;
+            height: 80px;
+            background: #009578;
+            border: 2px solid #ffffff;
+            pointer-events: none;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,7 +131,7 @@
     <!-- <div id='my_div' data-name='anony' data-started-coding-at="12">
         Sample Text
     </div> -->
-    <ul id='my_list'>
+    <!-- <ul id='my_list'>
         <li>Apples</li>
         <li>Pears</li>
         <li>Bananas</li>
@@ -133,7 +148,7 @@
     </div>
     <div id="my_div">
         <p>Second Div</p>
-    </div>
+    </div> -->
     <!-- <div id="container1">
 
         <div class="box">Box 1</div>
@@ -152,9 +167,12 @@
         Nulla unde sed facilis incidunt molestias nisi pariatur, autem ipsa, est saepe quasi quisquam delectus?
     </p> -->
     <!-- <iframe src="content.html" frameborder="1" style="width: 600px; height: 300px;"></iframe> -->
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
 
     <script src="js/element_from_point.js"></script>
-    <script src="js/is_equal_node.js"></script>
+    <!-- <script src="js/is_equal_node.js"></script> -->
     <!-- <script src="js/replace_with.js"></script> -->
     <!-- <script src="js/apeend_once.js"></script> -->
     <!-- <script src="js/replace_child.js"></script> -->
