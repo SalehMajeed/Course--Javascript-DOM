@@ -3,7 +3,7 @@
 
 <head>
     <style media="screen">
-        div {
+        /* div {
             padding: 20px;
             font-weight: bold;
             color: white;
@@ -58,6 +58,29 @@
             border: 2px solid black;
             padding: 5px;
             box-sizing: border-box;
+        } */
+
+        .progress-bar {
+            position: relative;
+            width: 300px;
+            height: 40px;
+            border: 1px solid #000;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: #59ea63;
+            transition: width 0.5%;
+        }
+
+        .progress-bar-value {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
         }
     </style>
     <meta charset="UTF-8">
@@ -70,17 +93,21 @@
         Navigation
     </nav> -->
     <h2 id='title'>Element.getBoundingClientRect - JS DOM - decode</h2>
+    <div class="progress-bar">
+        <div class="progress-bar-value">65%</div>
+        <div class="progress-bar-fill"></div>
+    </div>
     <!-- <p id='my_para'>
         Yeah mate
     </p> -->
     <!-- <div id='my_div' data-name='anony' data-started-coding-at="12">
         Sample Text
     </div> -->
-    <ul id='my_list'>
+    <!-- <ul id='my_list'>
         <li>Apples</li>
         <li>Pears</li>
         <li>Bananas</li>
-    </ul>
+    </ul> -->
     <!-- <div id="container1">
 
         <div class="box">Box 1</div>
@@ -94,7 +121,8 @@
         <div class="box">Box 3</div>
     </div> -->
 
-    <script src="js/query_selector_all.js"></script>
+    <script src="js/progress.js"></script>
+    <!-- <script src="js/query_selector_all.js"></script> -->
     <!-- <script src="js/query_selector.js"></script> -->
     <!-- <script src="js/outer_html.js"></script> -->
     <!-- <script src="js/get_bounding_client_rect.js"></script> -->
